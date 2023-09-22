@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="auther" content="ck">
+    <title>鲲鲲搜索</title>
+    <style type="text/css">
+        body{
+            background-image: url("../img/美图.jpg");
+        }
+        .flex-comtainer{
+            display: flex;
+        }
+        h1{
+            color: aquamarine;
+            text-align: center;
+        }
+        .middle{
+            height: 200px;
+            line-height: 200px;
+            vertical-align: auto;      /*???*/
+        }
+    </style>
+    <style type="text/css">         /*开始设置搜索框*/          
+        input{
+            width: 800px;                   /*调整搜索框长度*/
+            border: 1px solid #e2e2e2;    /*???*/
+            height: 50px;
+            float:left;
+            padding: 0 0 0 40px;
+        }
+        form{
+            width: 800px;
+            margin: auto;
+        }
+        input.search{
+            width: 120px;
+            height: 50px;
+            float: right;
+        }
+    </style>
+    <script>
+        function getCurrentTime() {
+            var date = new Date();
+            var currentTime = date.toLocaleString();
+            document.getElementById("time").innerHTML = currentTime;
+        }
+
+        setInterval(getCurrentTime, 1000);
+    </script>
+</head>
+<body onload="getCurrentTime()"
+style="background-size:100% 100%;     
+background-attachment: fixed;"       
+>                              <!--调整屏幕适配度和使页面跟随滑动-->    
+    <div id="time" style="text-align: center;font-size: 30px;"></div>          
+    <h1 class="middle">CK知道你知道</h1>
+    <form target="_blank" method="get" action="https://www.baidu.com/s">
+        <input type="text" placeholder="请输入关键词" name="word" class="text" />
+        <input type="submit" value="搜索" class="search">
+    </form>  
+    <ul class="">
+        <li style="color:#666;">搜索历史</li>
+    </ul>
+</body>
+</html>
+
+
