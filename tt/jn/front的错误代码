@@ -1,0 +1,32 @@
+        #box{                       
+            height: 50px;
+            line-height: 50px;
+            vertical-align: auto; 
+            width: 800px;              /*调整据左边的距离*/
+            margin: 50px auto;                /*???*/
+            font-family: 'Microsoft YaHei';
+            font-size: 14px;
+        }
+        #search{
+            width: 78px;
+            height: 32px;
+            float: right;
+            background: black;
+            color: white;
+            text-align: center;
+            line-height: 32px;
+            cursor: pointer;      /*??? */
+        }
+        input{
+            width: 800px;                   /*调整搜索框长度*/
+            border: 1px solid #e2e2e2;    /*???*/
+            height: 50px;
+            float:left;
+            padding: 0 0 0 40px;
+        }
+/* <script>
+    function Search() {
+    var url = 'https://www.baidu.com/s?wd=' + oInp.value;
+    window.open(url);
+    }
+</script> */
